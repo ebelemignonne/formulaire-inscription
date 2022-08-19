@@ -82,7 +82,24 @@ function pagePrecedente(){
     document.querySelector("#num"+pageActive).classList.add("active")
 }
 
-    //On recupere les information du tableau
+    //On recupere les information de l'eleve
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("Nom:", e.target.nom.value);
+  console.log("Prénom:", e.target.prenom.value);
+  console.log("sexe:", e.target.sexe.value);
+  console.log("date_naissance:", e.target.date_naissance.value);
+  console.log("lieu_naissance:", e.target.lieu_naissance.value);
+  console.log("classe:", e.target.classe.value);
+
+  console.log("Nom du tuteur :", e.target.nom_t.value);
+  console.log("Prénom du tuteur:", e.target.prenom_t.value);
+  console.log("Numéro de téléphone:", e.target.tel.value);
+  console.log("Email:", e.target.email.value);
+});
 
 
 
