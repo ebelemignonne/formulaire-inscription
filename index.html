@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+        </header>
+        <form action="" method="get">
+            <div class="page" id="page1">
+                <h1>Informations de l'eleve</h1>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ajouter un nom" required>
+                </div>
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ajouter un nom" required>
+                </div>
+                <div class="select" >
+                <label for="prenom">Sexe :</label>
+                    <select class="select1" name="sexe" id="sexe">sexe
+                        <option value="">Choisir...</option>
+                        <option value="">Maxculin</option>
+                        <option value="">Feminin</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="prenom">Date de naissance :</label>
+                    <input type="text" id="date_naissance" name="date_naissance" placeholder="Jour  /  mois  /  année" required>
+                </div>
+                <div>
+                    <label for="lieu_naissance">Lieux de naissance :</label>
+                    <input type="text" id="lieu_naissance" name="lieu_naissance" placeholder="Votre lieux de naissance">
+                </div>
+                <div>
+                    <label for="classe">Classe :</label>
+                    <input type="text" id="classe" name="classe" placeholder="votre classe">
+                </div>
+                <button class="next" type="button">Suivant</button>
+            </div>
+            <div class="page" id="page2">
+                <h1>Informations du tuteur légal</h1>
+
+                <div>
+                    <label for="nom-t">Nom du tuteur :</label>
+                    <input type="text" id="nom-t" name="nom-t" placeholder="Ajouter un nom" required>
+                </div>
+                <div>
+                    <label for="prenom-t">Prénom du tuteur :</label>
+                    <input type="text" id="prenom-t" name="prenom-t" placeholder="Ajouter un prenom" required>
+                </div>
+
+                <div>
+                    <label for="tel">Numéro de téléphone :</label>
+                    <input type="nomber" id="tel" name="tel" placeholder="=241 77 31 57 78">
+                </div>
+
+                <div>
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="=exemple@gmail.com">
+                </div>
+
+                <button class="prev" type="button">Précédent</button>
+                <button class="next" type="button">Suivant</button>
+            </div>
+            <div class="page" id="page3">
+                <h2>Tableau d'affichage des informations</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+
+
+
+                
+                <button class="prev" type="button">Précédent</button>
+                <button>Terminer</button>
+            </div>
+        </form>
+    </main>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
