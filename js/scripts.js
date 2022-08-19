@@ -82,10 +82,11 @@ function pagePrecedente(){
     document.querySelector("#num"+pageActive).classList.add("active")
 }
 
-    //On recupere les information de l'eleve
+//On recupere les information pour les stocker dans un objet
 
 const form = document.querySelector("form");
 
+//On recupere les information de l'eleve
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("Nom:", e.target.nom.value);
@@ -94,7 +95,7 @@ form.addEventListener("submit", (e) => {
   console.log("date_naissance:", e.target.date_naissance.value);
   console.log("lieu_naissance:", e.target.lieu_naissance.value);
   console.log("classe:", e.target.classe.value);
-
+  //On recupere les information du tuteur
   console.log("Nom du tuteur :", e.target.nom_t.value);
   console.log("Prénom du tuteur:", e.target.prenom_t.value);
   console.log("Numéro de téléphone:", e.target.tel.value);

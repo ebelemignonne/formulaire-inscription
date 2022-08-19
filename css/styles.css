@@ -1,12 +1,12 @@
 main{
-    width: 20%;
+    width: 40vw;
     height: 70%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     border: 1px solid lightgrey;
-    padding: 50px ;
+    padding: 40px 0px;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -61,3 +61,46 @@ header{
     color: white;
     background-color: blue;
 }
+
+/*  css tableau*/
+#tab1{
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+#tab2{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgrey;
+}
+
+th{
+    border: 1px solid lightgrey;
+    color: rgb(101, 101, 101);
+}
+
+.tr_eleve,
+.tr_parent
+{
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
