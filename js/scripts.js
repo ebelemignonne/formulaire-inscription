@@ -92,30 +92,38 @@ const form = document.querySelector("form");
 
 
 //recuperation des infos de l'eleve dans le html et les afficher dans la cosole
+window.addEventListener('load', () => {
+    lists = JSON.parse(localStorage.getItem('lists')) || [];
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  eleve ={
+
+  const info = {
     Nom: e.target.nom.value,
     Prénom: e.target.prenom.value,
     sexe: e.target.sexe.value,
     date_naissance: e.target.date_naissance.value,
     lieu_naissance: e.target.lieu_naissance.value,
-    classe: e.target.classe.value
-  }
-  console.log(eleve);
-
-  tuteur={
+    classe: e.target.classe.value,
     Nom_du_tuteur: e.target.nom_t.value,
     Prénom_du_tuteur: e.target.prenom_t.value,
     Numéro_de_téléphone: e.target.tel.value,
-    Email: e.target.email.value
-  }
-  console.log(tuteur);
+    Email: e.target.email.value,
+  };
 
+  lists.push(info);
+
+  localStorage.setItem('lists', JSON.stringify(lists));
+
+  localStorage.getItem("lists", JSON.stringify(lists));
+console.log(info);
 });
 
-let info = ['eleve', 'tuteur']
-console.log(info);
+})
+
+document.getElementById("th1").innerHTML = `${info.Nom}`;
+
+
 
     
 

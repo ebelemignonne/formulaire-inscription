@@ -13,16 +13,16 @@
         </header>
         <form action="" method="get">
             <div class="page" id="page1">
-                <h1>Informations de l'eleve</h1>
-                <div>
+                <h1 class="ball">Informations de l'eleve</h1>
+                <div class="ball">
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom" placeholder="Ajouter un nom" required>
                 </div>
-                <div>
+                <div class="ball">
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" placeholder="Ajouter un nom" required>
                 </div>
-                <div class="select" >
+                <div class="select ball" >
                 <label for="prenom">Sexe :</label>
                     <select class="select1" name="sexe" id="sexe">sexe
                         <option value="">Choisir...</option>
@@ -30,53 +30,53 @@
                         <option value="">Feminin</option>
                     </select>
                 </div>
-                <div>
+                <div class="ball">
                     <label for="prenom">Date de naissance :</label>
                     <input type="text" id="date_naissance" name="date_naissance" placeholder="Jour  /  mois  /  année" required>
                 </div>
-                <div>
+                <div class="ball">
                     <label for="lieu_naissance">Lieux de naissance :</label>
                     <input type="text" id="lieu_naissance" name="lieu_naissance" placeholder="Votre lieux de naissance">
                 </div>
-                <div>
+                <div class="ball">
                     <label for="classe">Classe :</label>
                     <input type="text" id="classe" name="classe" placeholder="votre classe">
                 </div>
-                <button class="next" type="button">Suivant</button>
+                <button class="next ball" type="button">Suivant</button>
             </div>
-            <div class="page" id="page2">
-                <h1>Informations du tuteur légal</h1>
+            <div class="page ball" id="page2">
+                <h1 class="ball">Informations du tuteur légal</h1>
 
-                <div>
+                <div class="ball">
                     <label for="nom_t">Nom du tuteur :</label>
                     <input type="text" id="nom_t" name="nom_t" placeholder="Ajouter un nom" required>
                 </div>
-                <div>
+                <div class="ball">
                     <label for="prenom_t">Prénom du tuteur :</label>
                     <input type="text" id="prenom_t" name="prenom_t" placeholder="Ajouter un prenom" required>
                 </div>
 
-                <div>
+                <div class="ball">
                     <label for="tel">Numéro de téléphone :</label>
                     <input type="nomber" id="tel" name="tel" placeholder="+241 77 31 57 78">
-                </div>
+                </div class="ball">
 
-                <div>
+                <div class="ball">
                     <label for="email">E-mail :</label>
                     <input type="email" id="email" name="email" placeholder="exemple@gmail.com">
                 </div>
 
-                <button class="prev" type="button">Précédent</button>
-                <button type="submit">Terminer</button>
-                <button class="next" type="button">Suivant</button>
+                <button class="prev ball" type="button">Précédent</button>
+                <button  class="ball" type="submit">Terminer</button>
+                <button class="next ball" type="button">Suivant</button>
             </div>
-            <div class="page" id="page3">
-                <h2>Tableau d'affichage des informations</h2>
+            <div class="page ball" id="page3">
+                <h2 class="ball">Tableau d'affichage des informations</h2>
 
-                <h4>INFO ELEVE</h4>
+                <h4  class="ball">Informations de l'eleve</h4>
                     <table id="tab1">
                         <tr class="tr_eleve">
-                            <th>Nom</th>
+                            <th id="th1">Nom</th>
                             <th>Prenom</th>
                             <th>Sexe</th>
                             <th>Date de naissance</th>
@@ -93,7 +93,7 @@
                         </tr>
                     </table>
                     
-                <h4>INFO ELEVE</h4>
+                <h4>Informations du tutur</h4>
 
                     <table id="tab2">
                         <tr class="tr_parent">
@@ -109,11 +109,8 @@
                             <th></th>
                         </tr>
                     </table>
-
-
-
-                
-                <button class="prev" type="button">Précédent</button>
+                    <br>
+                <button class="prev ball" type="button">Précédent</button>
 
             </div>
         </form>
