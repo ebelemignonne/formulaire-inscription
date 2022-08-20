@@ -94,10 +94,10 @@ const form = document.querySelector("form");
 //recuperation des infos de l'eleve dans le html et les afficher dans la cosole
 window.addEventListener('load', () => {
     lists = JSON.parse(localStorage.getItem('lists')) || [];
-
+//creation de la fonction de recuperation
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
+//object qui contient toutes les informations du form.
   const info = {
     Nom: e.target.nom.value,
     Prénom: e.target.prenom.value,
