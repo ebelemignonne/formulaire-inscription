@@ -88,28 +88,44 @@ const form = document.querySelector("form");
 
 //On recupere les information de l'eleve dans le html pour les afficher dans la console
 
-/*function result(){
-    let nom = document.getElementById("nom").value;
-    let prenom = document.getElementById("prenom").value;
-    let sexe = document.getElementById("sexe").value;
-    let date_naissance = document.getElementById("date_naissance").value;
-    let lieu_naissance =
-      document.getElementById("lieu_naissance").value;
-    let classe = document.getElementById("classe").value;
-    console.log(result);
-}*/
+
+
+
 //recuperation des infos de l'eleve dans le html et les afficher dans la cosole
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log("Nom:", e.target.nom.value);
-  console.log("Prénom:", e.target.prenom.value);
-  console.log("sexe:", e.target.sexe.value);
-  console.log("date_naissance:", e.target.date_naissance.value);
-  console.log("lieu_naissance:", e.target.lieu_naissance.value);
-  console.log("classe:", e.target.classe.value);
-  //On recupere les information du tuteur dans le html pour les afficher dans la console
-  console.log("Nom du tuteur :", e.target.nom_t.value);
-  console.log("Prénom du tuteur:", e.target.prenom_t.value);
-  console.log("Numéro de téléphone:", e.target.tel.value);
-  console.log("Email:", e.target.email.value);
+  eleve ={
+    Nom: e.target.nom.value,
+    Prénom: e.target.prenom.value,
+    sexe: e.target.sexe.value,
+    date_naissance: e.target.date_naissance.value,
+    lieu_naissance: e.target.lieu_naissance.value,
+    classe: e.target.classe.value
+  }
+  console.log(eleve);
+
+  tuteur={
+    Nom_du_tuteur: e.target.nom_t.value,
+    Prénom_du_tuteur: e.target.prenom_t.value,
+    Numéro_de_téléphone: e.target.tel.value,
+    Email: e.target.email.value
+  }
+  console.log(tuteur);
+
 });
+
+let info = ['eleve', 'tuteur']
+console.log(info);
+
+    
+
+function result() {
+  let nom = document.getElementById("nom").value;
+  let prenom = document.getElementById("prenom").value;
+  let sexe = document.getElementById("sexe").value;
+  let date_naissance = document.getElementById("date_naissance").value;
+  let lieu_naissance = document.getElementById("lieu_naissance").value;
+  let classe = document.getElementById("classe").value;
+  console.log(result);
+}
+
