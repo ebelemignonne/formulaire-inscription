@@ -86,7 +86,19 @@ function pagePrecedente(){
 
 const form = document.querySelector("form");
 
-//On recupere les information de l'eleve
+//On recupere les information de l'eleve dans le html pour les afficher dans la console
+
+/*function result(){
+    let nom = document.getElementById("nom").value;
+    let prenom = document.getElementById("prenom").value;
+    let sexe = document.getElementById("sexe").value;
+    let date_naissance = document.getElementById("date_naissance").value;
+    let lieu_naissance =
+      document.getElementById("lieu_naissance").value;
+    let classe = document.getElementById("classe").value;
+    console.log(result);
+}*/
+//recuperation des infos de l'eleve dans le html et les afficher dans la cosole
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   console.log("Nom:", e.target.nom.value);
@@ -95,31 +107,9 @@ form.addEventListener("submit", (e) => {
   console.log("date_naissance:", e.target.date_naissance.value);
   console.log("lieu_naissance:", e.target.lieu_naissance.value);
   console.log("classe:", e.target.classe.value);
-  //On recupere les information du tuteur
+  //On recupere les information du tuteur dans le html pour les afficher dans la console
   console.log("Nom du tuteur :", e.target.nom_t.value);
   console.log("Prénom du tuteur:", e.target.prenom_t.value);
   console.log("Numéro de téléphone:", e.target.tel.value);
   console.log("Email:", e.target.email.value);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
